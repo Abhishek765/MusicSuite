@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Activities.ButtonsActivity">
+
+
+    <TextView
+        android:id="@+id/tv_emotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="114dp"
+        android:gravity="center"
+        android:text="Click to Detect emotion"
+        android:textColor="#E200838F"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <ImageButton
+        android:id="@+id/iv_emotion"
+        android:layout_width="182dp"
+        android:layout_height="192dp"
+        android:onClick="openEmotionActivity"
+        android:layout_below="@id/tv_emotion"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="115dp"
+        android:src="@drawable/emotion" />
+
+    <Button
+        android:id="@+id/bt_song_list"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_emotion"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="92dp"
+        android:onClick="openSongList"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/button_material"
+        android:text="See All Songs List" />
+
+    <Button
+        android:id="@+id/bt_play_random"
+        android:layout_width="150dp"
+        android:layout_height="95dp"
+        android:layout_below="@+id/bt_song_list"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/ic_play_icon" />
+
+    <TextView
+        android:id="@+id/tv_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_play_random"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="101dp"
+        android:textColor="#E200838F"
+        android:textStyle="bold|italic"
+        android:text="Click to play Random song"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
