@@ -1,4 +1,4 @@
-# Rakathon_MusicSuite
+# MusicSuite
 Android Application that plays Music Using selfies 😁😉📷
 
 
